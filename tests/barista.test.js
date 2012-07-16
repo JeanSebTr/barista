@@ -598,6 +598,7 @@ for(e in RouterTests) {
       RouterTests.teardown(e);
     } catch (e) {
       util.puts(RouterTests.fail)
+      console.error(e.stack);
     }
   }
 }
